@@ -1,0 +1,196 @@
+* {
+    box-sizing: content-box;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+:root {
+    --accent-color-green: #5e999c;
+    --accent-color-grey: #888888;
+    --accent-color-special-grey: #313c4e;
+}
+
+.accent-color-green {
+    color: var(--accent-color-green);
+}
+.accent-color-grey {
+    color: var(--accent-color-grey);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div#contact-details i {
+    margin-left: 10px;
+}
+
+.company-expertise {
+    color: var(--accent-color-grey);
+}
+
+ul.achievements-tasks > li::marker {
+    color: var(--accent-color-green);
+}
+
+ul.achievements-tasks {
+    padding-left: 15px;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1, h2, h3, p, ul{
+    margin: 0px;
+}
+
+.section {
+    display: flex;
+    flex-direction: row;
+    
+    padding: 10px 10px 10px 20px;
+    overflow: hidden;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.halfcol {
+    min-width: 49%;
+    max-width: 49%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-details {
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+
+#main-section {
+    border-top: 2px black solid;
+
+}
+
+#main-section > :nth-child(1) > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-duration-location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div#skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+div#skills p {
+    padding: 5px;
+    background-color: var(--accent-color-grey);
+    margin-left: 0px;
+    margin: 5px 10px 5px 0px;
+    border: 0px var(--accent-color-grey) solid;
+    border-radius: 5px;
+
+}
+
+div.certification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.certification > div#details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.certification > div#image {
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+}
+div.certification > div#image > svg{
+   width: 100%;
+}
+
+div.important-heading {
+    padding-left: 10px;
+    margin-left: -20px;
+    border-left: var(--accent-color-green) solid 10px;
+}
+
+
+@media print {
+    body {
+        padding-top: 50px;
+    }
+
+
+    div.important-heading > #name {
+        font-size: 1.7em;
+    }
+
+    div.important-heading > #current-designation {
+        font-size: 1.0em;
+    }
+
+    div.certification > div#image {
+        display: flex;
+        justify-content: flex-end;
+        width: 30%;
+    }
+
+}
+
+div.important-heading > #name {
+    color: var(--accent-color-special-grey);
+    font-weight: 500;
+}
+div.important-heading > #current-designation {
+    font-weight: 400;
+}
+
+h3.designation,  h3.qualification  {
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+h3.company, h3.school {
+    font-weight: 200;
+    font-size: 1.1em;
+}
+
+.sub-section-heading {
+    font-weight: 800;
+}
+
+.cert-name {
+    font-weight: 600;
+    font-size: 1.1em;
+    
+}
+
+#main-section > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.date, .subject{
+    font-size: 0.8em;
+}
+
+div.education {
+    margin: 10px 0px;
+}
