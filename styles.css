@@ -13,6 +13,7 @@
 .accent-color-green {
     color: var(--accent-color-green);
 }
+
 .accent-color-grey {
     color: var(--accent-color-grey);
 }
@@ -30,7 +31,7 @@ div#contact-details i {
     color: var(--accent-color-grey);
 }
 
-ul.achievements-tasks > li::marker {
+ul.achievements-tasks>li::marker {
     color: var(--accent-color-green);
 }
 
@@ -43,15 +44,20 @@ body {
     padding: 0px;
 }
 
-h1, h2, h3, p, ul{
+h1,
+h2,
+h3,
+p,
+ul {
     margin: 0px;
 }
 
 .section {
     display: flex;
     flex-direction: row;
-    
-    padding: 10px 10px 10px 20px;
+
+    /* gives me a 20px padding on the left of the whole page that helps me add a colored bar */
+    padding: 10px 10px 10px 20px; 
     overflow: hidden;
     align-items: stretch;
     justify-content: space-between;
@@ -73,10 +79,9 @@ h1, h2, h3, p, ul{
 
 #main-section {
     border-top: 2px black solid;
-
 }
 
-#main-section > :nth-child(1) > div {
+#main-section> :nth-child(1)>div {
     display: flex;
     flex-direction: column;
 }
@@ -91,7 +96,7 @@ div#skills {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+
 }
 
 div#skills p {
@@ -110,19 +115,20 @@ div.certification {
     justify-content: space-between;
 }
 
-div.certification > div#details {
+div.certification>div#details {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-div.certification > div#image {
+div.certification>div#image {
     display: flex;
     justify-content: flex-end;
     width: 20%;
 }
-div.certification > div#image > svg{
-   width: 100%;
+
+div.certification>div#image>svg {
+    width: 100%;
 }
 
 div.important-heading {
@@ -138,15 +144,7 @@ div.important-heading {
     }
 
 
-    div.important-heading > #name {
-        font-size: 1.7em;
-    }
-
-    div.important-heading > #current-designation {
-        font-size: 1.0em;
-    }
-
-    div.certification > div#image {
+    div.certification>div#image {
         display: flex;
         justify-content: flex-end;
         width: 30%;
@@ -154,20 +152,27 @@ div.important-heading {
 
 }
 
-div.important-heading > #name {
+div.important-heading>#name {
+    font-size: 1.7em;
+}
+
+div.important-heading>#name {
     color: var(--accent-color-special-grey);
     font-weight: 500;
 }
-div.important-heading > #current-designation {
+
+div.important-heading>#current-designation {
     font-weight: 400;
 }
 
-h3.designation,  h3.qualification  {
+h3.designation,
+h3.qualification {
     font-weight: 600;
     font-size: 1.1em;
 }
 
-h3.company, h3.school {
+h3.company,
+h3.school {
     font-weight: 200;
     font-size: 1.1em;
 }
@@ -179,15 +184,16 @@ h3.company, h3.school {
 .cert-name {
     font-weight: 600;
     font-size: 1.1em;
-    
+
 }
 
-#main-section > div{
+#main-section>div {
     display: flex;
     justify-content: space-between;
 }
 
-.date, .subject{
+.date,
+.subject {
     font-size: 0.8em;
 }
 
