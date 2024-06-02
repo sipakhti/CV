@@ -200,3 +200,51 @@ h3.school {
 div.education {
     margin: 10px 0px;
 }
+
+@media only screen and (max-width: 780px) {
+
+    div.section {
+        flex-direction: column;
+    }
+
+    div.halfcol {
+        min-width: 100%;
+    }
+
+    div#contact-details {
+        justify-content: flex-end;
+        font-size: 0.75em;
+    }
+
+    div#work-experience {
+        justify-content: flex-start;
+    }
+
+    div#work-experience div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    div#skills {
+        justify-content: center;
+    }
+
+    h2.sub-section-heading { 
+        margin-bottom: 10px;
+        margin-top: 10px;
+        align-self: stretch;
+    }
+
+    div#education-history {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    div.education {
+        min-width: 33%;
+        align-items: center;
+        text-align: center;
+    }
+}
