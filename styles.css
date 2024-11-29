@@ -201,6 +201,25 @@ div.education {
     margin: 10px 0px;
 }
 
+
+div#work-experience {
+    justify-content: flex-start;
+
+}
+
+div#work-experience  div{
+    margin-top: 20px;
+
+}
+
+div.certification > #image > img {
+    overflow: auto;
+}
+
+div#certifications > a{
+    margin-top: 100px;
+}
+
 @media only screen and (max-width: 780px) {
 
     div.section {
@@ -216,10 +235,6 @@ div.education {
         font-size: 0.75em;
     }
 
-    div#work-experience {
-        justify-content: flex-start;
-    }
-
     div#work-experience div {
         margin-top: 10px;
         margin-bottom: 10px;
@@ -233,18 +248,5 @@ div.education {
         margin-bottom: 10px;
         margin-top: 10px;
         align-self: stretch;
-    }
-
-    div#education-history {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
-    div.education {
-        min-width: 33%;
-        align-items: center;
-        text-align: center;
     }
 }
