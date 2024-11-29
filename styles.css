@@ -85,6 +85,9 @@ ul {
     display: flex;
     flex-direction: column;
 }
+#main-section> :nth-child(2) {
+    justify-content: flex-start;
+}
 
 .exp-duration-location {
     display: flex;
@@ -213,11 +216,11 @@ div#work-experience  div{
 }
 
 div.certification > #image > img {
-    overflow: auto;
+    width: 100%;
 }
 
-div#certifications > a{
-    margin-top: 100px;
+div#certifications > a > .certification{
+    margin-top: 20px;
 }
 
 @media only screen and (max-width: 780px) {
@@ -249,4 +252,5 @@ div#certifications > a{
         margin-top: 10px;
         align-self: stretch;
     }
+
 }
